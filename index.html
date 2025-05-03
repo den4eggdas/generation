@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор паролей</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page">
+        <div class="wrapper">
+    <header>
+        <h1>Генератор паролей 2000</h1>
+        <!-- <audio controls src="music/huita.mp3" loop autoplay></audio> -->
+        <img src="img/head.jpg" alt="logo">
+
+    </header>
+    <main>
+        <div class="setting">
+            <h2 class="setTing">Выберите настройки</h2>
+            <div class="radio-group">
+                <span>Заглавные буквы</span>
+                <input type="checkbox" id="radioLETTER" value="Заглавные буквы" class="check__checkbox">
+        <label for="radioLETTER" class="check__list" name="radioLETTER"></label>
+        
+    </div>
+    <div class="radio-group">
+        <span>Строчные буквы</span>
+        <input type="checkbox" id="radioLet" value="буквы" class="check__checkbox">
+        <label for="radioLet" class="check__list" name="radioLet"></label>
+        
+    </div>
+    <div class="radio-group">
+        <span>Цифры</span>
+        <input type="checkbox" id="radioNUMBER" value="цифры" class="check__checkbox">
+        <label for="radioNUMBER" class="check__list" name="radioNUMBER"></label>
+        
+    </div>
+    <div class="radio-group">
+        <span>Символы</span>
+        <input type="checkbox" id="radioSymbol" value="Символы" class="check__checkbox">
+        <label for="radioSymbol" class="check__list" name="radioSymbol"></label>
+        
+    </div>
+    </div>
+         <div class="div">
+            <input type="range" id="rangePass" min="8" max="30" value="12" step="2" >
+            <h3>Длина пароля: <span id="rangeValue">12</span></h3>
+            
+            <div class="pass__gen">
+            <input class="password" type="text" readonly>
+            <button class="copy"><span class="copyMessage">Скопировать</span></button>
+        </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <button class="random">Сгенерировать</button>
+
+    </footer>
+</div>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>

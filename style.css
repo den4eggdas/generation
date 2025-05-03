@@ -1,0 +1,165 @@
+body {
+    font-family: "Source Code Pro", monospace, sans-serif;
+    background-color: blue;
+}
+@keyframes colorChange {
+    0% {
+        color: rgb(1, 1, 73);
+    }
+    50% {
+        color: blueviolet;
+    }
+    100% {
+        color: rgb(0, 0, 99);
+    }
+}
+
+.check__checkbox {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+  }
+  
+  .check__list {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 20px;
+    background: rgb(131, 131, 131);
+  }
+  
+  .check__list:before {
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    transition: .3s;
+  }
+  
+  .check__checkbox:checked + .check__list {
+    background-color: rgb(18, 183, 0);
+  }
+  
+
+  .check__checkbox:checked + .check__list:before {
+    left: calc(100% - 23px);
+  }
+
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 99);
+    gap: 40px;
+    width: 1400px;
+    max-width: 100%;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper {
+    background-color: rgb(0, 0, 135);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+h1 {
+    font-size: 60px;
+    animation: colorChange 0.5s infinite
+    
+}
+img {
+    width: 250px;
+    
+}   
+.div {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+.div h3 {
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+#rangePass {
+    width: 300px;
+
+}
+#rangeValue {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.password {
+    min-width: min-content;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    color: white;
+}
+.radio-group {
+    margin: 5px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 786px) {
+    h1 {
+        font-size: 30px ;
+        width: 100vw;
+        text-align: center;
+}
+button {
+    height: 20px;
+}
+}
+
+@media (max-width: 486px) {
+    h1 {
+        font-size: 25px ;
+}
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 20px ;
+    }
+   img {
+width: 150px;
+   }     
+
+}
